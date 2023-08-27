@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration and Login</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Welcome to User Authentication and Registration System</h1>
+    <div class="container">
+        <div class="form register-form">
+            <h2>Register</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="regUsername">Username</label>
+                    <input type="text" id="regUsername" name="regUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Password</label>
+                    <input type="password" id="regPassword" name="regPassword" required>
+                </div>
+                <button type="button" class="btn" onclick="register()">Register</button>
+            </form>
+            <h3>
+                If you are already Registered Please Login Here......
+            </h3>
+            <button class="btn" onclick="showLoginForm()">Login</button>
+        </div>
+
+        
+        <div class="form login-form">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" name="loginUsername" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                </div>
+                <button type="button" class="btn" onclick="login()">Login</button>
+            </form>
+            <h3>
+                If you had not Registered yet Please Register Here......
+            </h3>
+            <button class="btn" onclick="showRegisterForm()">Register</button>
+        </div>
+    </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
